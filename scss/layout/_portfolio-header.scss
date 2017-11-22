@@ -1,0 +1,12 @@
+.portfolio-header {
+    width: 100%;
+	text-align: center;
+	margin: 0 auto;
+    
+    @media #{$brk-narrow}{
+        padding-bottom: 2em;
+    } 
+        @media #{$brk-wide}{
+        padding-top: 4em;
+    }
+}

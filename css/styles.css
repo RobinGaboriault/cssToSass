@@ -1,7 +1,6 @@
 
 
 /* HTML */
-
 html {
 
 	width: 100%;
@@ -14,6 +13,10 @@ html {
   font-size: 14px;
   color: #888888 ;
 }
+
+
+
+
 
 h2 {
 
@@ -55,7 +58,7 @@ h2 {
 	text-decoration: none;
 }
 
-.nac li a {
+.nav li a {
 
 	width: 100%;
 	height: 100%;
@@ -215,7 +218,8 @@ a:hover {
 	color: #2d4ff7;
 }
 
- /* Media  quesries for tablets */ 
+//////////////////////////////////////////////////////////////////////////////
+ /* Media  queries for tablets */ 
 
 @media only screen and ( min-width: 768px), only screen and (min-width: 700px) and (orientation: landscape){
 
@@ -319,6 +323,7 @@ a:hover {
 }  /* End of Media query for tablets */
 
 
+/////////////////////////////////////////////////////////////////////////////////
 
 /*    Media Queries for DESKTOP uers    */
 
@@ -395,6 +400,8 @@ a:hover {
 .profile-picture {
 
 	max-width: 400px;
+	max-height: 250px;
+}max-width: 400px;
 	max-height: 250px;
 }
 

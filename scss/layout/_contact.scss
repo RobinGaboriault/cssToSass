@@ -1,0 +1,27 @@
+/* Contact   */
+
+.contact {
+
+	padding-top: 4em;
+	text-align: center;
+	padding-bottom: 2em;
+	margin: 0 auto;
+}
+
+.contact p {
+	padding-bottom: 1em;
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+	text-align: justify;
+    
+    @media #{$brk-narrow} {
+        width: 60%;
+    }
+    @media #{$brk-wide}{
+
+        padding-top: 2em;
+        padding-bottom: 2em;
+        width: 45%;
+    }
+}
