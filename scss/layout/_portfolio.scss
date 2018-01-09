@@ -6,7 +6,7 @@
 	margin: 0 auto;
 	width: 100%;
     
-    @media #{$brk-wide}{
+    @media screen and (min-width: $brk-wide) {
         margin: auto;
         width: 96%;
         display: flex;
@@ -40,6 +40,11 @@ ul  {
 
 	text-align: center;
 	vertical-align: middle;
+    font-size: 14px;
+    
+    @media screen and (min-width: $brk-wide) {
+        font-size: 17px;
+    }
 }
 
 .portfolio-div p {
@@ -51,17 +56,23 @@ ul  {
 }
 
 .portfolio-div img {
-        @media #{$brk-narrow}{   
-        width: 96%;
+        @media screen and (min-width: $brk-narrow){   
+        width: 80%;
     }
-    @media #{$brk-wide}{
+    @media screen and (min-width: $brk-wide) {
+        width: 96%;
         max-width: 400px;
         max-height: 250px;
     }
 }
 
 .portfolio-div {
-    @media #{$brk-wide}{
+    
+    @media screen and (min-width: $brk-wide) {
+       width: 50%; 
+    }
+    
+    @media screen and (min-width: $brk-wider) {
         width: 33%;
         text-align: center;
     }
@@ -69,7 +80,7 @@ ul  {
 }
 
 .portfolio-div img:hover {
-    @media #{$brk-wide}{
+    @media screen and (min-width: $brk-wide) {
         transform: scale(1.1);
     }
     

@@ -1,4 +1,5 @@
 // Media query breakpoints
 
-$brk-narrow : '(min-width: 768px)';
-$brk-wide   : '(min-width: 1024px)';
+$brk-narrow :  320px;
+$brk-wide :  768px;
+$brk-wider : 1024px;

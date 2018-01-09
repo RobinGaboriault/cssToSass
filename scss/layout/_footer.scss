@@ -11,7 +11,7 @@
 	width: 80%;
 	min-height: 30px;
     
-    @media #{$brk-wide}{
+    @media screen and (min-width: $brk-wider){
         margin-top: 2em;
         margin-bottom: 2em;
     }

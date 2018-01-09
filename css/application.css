@@ -1,23 +1,34 @@
 /* HTML */
 html {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  font-size: 14px; }
+  @media (min-width: 320px) {
+    html {
+      font-size: 14px; } }
+  @media (min-width: 768px) {
+    html {
+      font-size: 17px; } }
+  @media (min-width: 1024px) {
+    html {
+      max-width: 1350px;
+      margin: auto; } }
 
 /* Global Layout Set-up */
 * {
   box-sizing: border-box;
-  font-size: 14px;
+  font-size: 14;
   color: #888888; }
   @media (min-width: 768px) {
-    * * {
-      font-size: 17px; } }
+    * p {
+      font-size: 16px; } }
 
 h2 {
   font-weight: 700; }
 
 .portfolio-header, a, h2, .name {
   color: black; }
-  @media (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
     .portfolio-header, a, h2, .name {
       color: black; } }
 
@@ -29,7 +40,7 @@ h2 {
 a:hover {
   color: #2d4ff7; }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   /*************************
   Clearfix
   *************************/
@@ -39,11 +50,7 @@ a:hover {
     display: table; }
 
   .clearfix:after {
-    clear: both; }
-
-  * body {
-    max-width: 1350px;
-    margin: auto; } }
+    clear: both; } }
 /*  Navigation style  */
 .main-nav {
   width: 100%;
@@ -51,7 +58,7 @@ a:hover {
   padding: 10px;
   text-align: center;
   display: inline-block; }
-  @media (min-width: 1024px) {
+  @media screen and (min-width: 1024px) {
     .main-nav {
       margin-top: 2em; } }
 
@@ -63,27 +70,33 @@ a:hover {
   padding: 0;
   text-decoration: none;
   line-height: 2; }
-  @media (min-width: 768px) {
+  @media screen and (min-width: 320px) {
     .nav {
       width: 45%;
       margin: auto;
+      display: inline-block;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around; } }
+  @media screen and (min-width: 768px) {
+    .nav {
+      margin: 0 auto;
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
       justify-content: space-around;
-      margin-bottom: 2em; } }
+      align-content: space-around;
+      margin-bottom: 34px; } }
   @media (min-width: 1024px) {
     .nav {
-      margin: 0 auto;
+      width: 45%;
+      margin: 0;
       display: inline-flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: flex-start;
-      align-content: space-around; } }
+      justify-content: flex-start; } }
 
 .nav li {
   text-decoration: none; }
-  @media (min-width: 1024px) {
+  @media screen and (min-width: 1024px) {
     .nav li {
       width: 15%;
       margin: 1.5em; } }
@@ -94,17 +107,37 @@ a:hover {
 
 .name {
   font-size: 1.5em; }
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
+    .name {
+      display: block;
+      font-size: 25.5px; } }
+  @media screen and (min-width: 1024px) {
     .name {
       text-align: left;
       left: -50px;
       display: inline-block;
-      width: 50%; } }
+      width: 50%;
+      font-size: 1.5em; } }
 
 /* Links decoration */
 li a, a:visited, a:hover, a:active {
   color: black;
   text-decoration: none; }
+
+/* Presentation  */
+.presentation {
+  margin-top: 0.5em;
+  text-align: center;
+  display: block; }
+  @media (min-width: 768px) {
+    .presentation {
+      margin: auto;
+      padding-bottom: 68px;
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row-reverse;
+      justify-content: flex-start;
+      width: 94%; } }
 
 /* Profile Picture */
 .profile-picture {
@@ -112,8 +145,11 @@ li a, a:visited, a:hover, a:active {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  width: 80%;
-  /* Presentation  */ }
+  width: 80%; }
+  @media screen and (min-width: 320px) {
+    .profile-picture {
+      width: 80%;
+      margin: auto; } }
   @media (min-width: 768px) {
     .profile-picture {
       width: 46%;
@@ -122,49 +158,43 @@ li a, a:visited, a:hover, a:active {
     .profile-picture {
       max-width: 400px;
       max-height: 250px; } }
-  .profile-picture .presentation {
-    margin-top: 0.5em;
-    text-align: center;
-    display: block; }
-    @media (min-width: 768px) {
-      .profile-picture .presentation {
-        width: 94%;
-        margin: auto;
-        display: flex;
-        flex-direction: row-reverse;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        padding-bottom: 4em; } }
-  .profile-picture .presentation p {
-    display: inline-block;
-    text-align: center;
-    width: 80%;
-    max-width: 500px; }
-    @media (min-width: 768px) {
-      .profile-picture .presentation p {
-        padding-top: 1em;
-        line-height: 1.6;
-        text-align: left;
-        width: 50%;
-        font-size: 16px;
-        color: #888888; } }
 
-@media (min-width: 1024px) {
-  .presentation-text {
-    max-width: 500px;
-    font-size: 20px;
-    text-align: center; } }
+.presentation p {
+  display: inline-block;
+  text-align: center;
+  width: 80%; }
+  @media screen and (min-width: 320px) {
+    .presentation p {
+      text-align: center;
+      width: 80%;
+      color: #888888; } }
+  @media (min-width: 768px) {
+    .presentation p {
+      width: 50%;
+      text-align: left;
+      padding-top: 16px;
+      line-height: 1.6; } }
+  @media (min-width: 1024px) {
+    .presentation p {
+      max-width: 500px;
+      font-size: 20px;
+      padding-top: 20px; } }
 
 .portfolio-header {
   width: 100%;
   text-align: center;
   margin: 0 auto; }
-  @media (min-width: 768px) {
-    .portfolio-header {
-      padding-bottom: 2em; } }
-  @media (min-width: 1024px) {
+  @media screen and (min-width: 1024px) {
     .portfolio-header {
       padding-top: 4em; } }
+  .portfolio-header h2 {
+    font-size: 14px; }
+    @media screen and (min-width: 768px) {
+      .portfolio-header h2 {
+        font-size: 17px; } }
+  @media (min-width: 768px) {
+    .portfolio-header {
+      padding-bottom: 34px; } }
 
 /* Portfolio  */
 .portfolio {
@@ -172,7 +202,7 @@ li a, a:visited, a:hover, a:active {
   display: block;
   margin: 0 auto;
   width: 100%; }
-  @media (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
     .portfolio {
       margin: auto;
       width: 96%;
@@ -197,7 +227,11 @@ ul {
 
 .portfolio-div p, h2 {
   text-align: center;
-  vertical-align: middle; }
+  vertical-align: middle;
+  font-size: 14px; }
+  @media screen and (min-width: 768px) {
+    .portfolio-div p, h2 {
+      font-size: 17px; } }
 
 .portfolio-div p {
   width: 80%;
@@ -206,20 +240,24 @@ ul {
   margin: 0 auto;
   padding-bottom: 2em; }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 320px) {
   .portfolio-div img {
-    width: 96%; } }
-@media (min-width: 1024px) {
+    width: 80%; } }
+@media screen and (min-width: 768px) {
   .portfolio-div img {
+    width: 96%;
     max-width: 400px;
     max-height: 250px; } }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 768px) {
+  .portfolio-div {
+    width: 50%; } }
+@media screen and (min-width: 1024px) {
   .portfolio-div {
     width: 33%;
     text-align: center; } }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .portfolio-div img:hover {
     transform: scale(1.1); } }
 
@@ -236,14 +274,18 @@ ul {
   width: 80%;
   text-align: center;
   text-align: justify; }
-  @media (min-width: 768px) {
+  @media screen and (min-width: 320px) {
     .contact p {
-      width: 60%; } }
+      width: 80%; } }
+  @media screen and (min-width: 768px) {
+    .contact p {
+      width: 60%;
+      font-size: 17px; } }
   @media (min-width: 1024px) {
     .contact p {
       padding-top: 2em;
       padding-bottom: 2em;
-      width: 45%; } }
+      max-width: 45%; } }
 
 /*   FOOTER   */
 .footer {
@@ -256,7 +298,7 @@ ul {
   padding-bottom: 2em;
   width: 80%;
   min-height: 30px; }
-  @media (min-width: 1024px) {
+  @media screen and (min-width: 1024px) {
     .footer {
       margin-top: 2em;
       margin-bottom: 2em; } }
