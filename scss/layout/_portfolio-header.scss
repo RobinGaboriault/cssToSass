@@ -1,6 +1,6 @@
 .portfolio-header {
-    width: 100%;
-	text-align: center;
+    @include width(100%);
+	@extend %text-align-center;
 	margin: 0 auto;
     
     @media screen and (min-width: $brk-narrow) {
@@ -9,10 +9,10 @@
         padding-top: 4em;
     }
     h2 {
-    font-size: 14px;
+    @include fontSize(14px);
 
     @media screen and (min-width: $brk-wide) {
-    font-size: 17px;
+    @include fontSize(17px);
     }
     }
     

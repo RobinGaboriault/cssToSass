@@ -4,7 +4,7 @@
  .presentation {
  	
  	margin-top: 0.5em;
- 	text-align: center;
+ 	@exted %text-align-center;
  	display: block;
      
      @media (min-width: $brk-wide) {
@@ -14,7 +14,7 @@
          flex-wrap: nowrap;
          flex-direction: row-reverse;
          justify-content: flex-start;
-         width: 94%;
+         @include width(94%);
          
      }
      
@@ -38,44 +38,45 @@
 	align-items: center;
 	justify-content: center;
 	margin: 0 auto;
-	width: 80%;
+	@include width(80%);
     
     @media screen and (min-width: $brk-narrow){
-	width: 80%;
+	@include width(80%);
 	margin: auto;
     }
+    
     @media (min-width: $brk-wide) {
-        width: 46%;
+        @include width(46%);
         margin: auto;
     }
     
     @media (min-width: $brk-wider) {
-        max-width: 400px;
+        @include max-width(400px);
         max-height: 250px;
 }
 }
 
 .presentation p {
 
+    @extend %text-align-center;
 	display: inline-block;
-	text-align: center;
-	width: 80%;
+	@include width(80%);
     
     @media screen and (min-width: $brk-narrow){
-	text-align: center;
-	width: 80%;
-	color: #888888 ;
+	@include width(80%);
+	@include color($grey);
      }
+    
     @media (min-width: $brk-wide) {
-        width: 50%;
-        text-align: left;
+        @include width(50%);
+        @include text-align-left;
         padding-top: 16px;
         line-height: 1.6;
     }
     
     @media (min-width: $brk-wider) {
-        max-width: 500px;
-        font-size: 20px;
+        @include max-width(500px);
+        @include fontSize(20px);
         padding-top: 20px;
     }
    

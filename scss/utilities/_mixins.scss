@@ -1,0 +1,52 @@
+// Mixins
+@mixin smallFont  {
+    font-size: 14px;
+}
+
+@mixin mediumFont {
+    font-size: 16px;
+}
+
+@mixin name {
+    font-size: 1.5em;
+}
+
+
+
+@mixin fontSize($size) {
+    font-size: $size;
+}
+
+@mixin fontWeight($weight) {
+    font-weight: $weight;
+}
+
+@mixin color($color) {
+    color: $color;
+
+}
+
+@mixin width($width) {
+    width: $width;
+}
+
+@mixin max-width($max-width) {
+    max-width: $max-width;
+}
+
+@mixin text-align-left {
+    text-align: left;
+}
+
+
+%text-align-center {
+    text-align: center;
+}
+
+
+
+
+
+
+
+

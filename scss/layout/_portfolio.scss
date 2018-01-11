@@ -4,11 +4,11 @@
 	padding-left: 0;
 	display: block;
 	margin: 0 auto;
-	width: 100%;
+	@include width(100%);
     
     @media screen and (min-width: $brk-wide) {
         margin: auto;
-        width: 96%;
+        @include width(96%);
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -19,8 +19,8 @@
 
 .portfolio-header {
 
-	width: 100%;
-	text-align: center;
+	@include width(100%);
+    @extend %text-align-center;
 	margin: 0 auto;
 }
 
@@ -33,23 +33,23 @@ ul  {
  	
  	margin: 0 auto;
  	display: block;
- 	width: 80%;
+ 	@include width(80%);
 }
 
 .portfolio-div p, h2 {
 
-	text-align: center;
+	@extend %text-align-center;
 	vertical-align: middle;
-    font-size: 14px;
+    @include fontSize(14px);
     
     @media screen and (min-width: $brk-wide) {
-        font-size: 17px;
+        @include fontSize(17px);
     }
 }
 
 .portfolio-div p {
-	width: 80%;
-	text-align: center;
+	@include width(80%);
+	@extend %text-align-center;
 	text-align: justify;
 	margin: 0 auto;
 	padding-bottom: 2em;
@@ -60,8 +60,8 @@ ul  {
         width: 80%;
     }
     @media screen and (min-width: $brk-wide) {
-        width: 96%;
-        max-width: 400px;
+        @include width(96%);
+        @include max-width(400px);
         max-height: 250px;
     }
 }
@@ -69,12 +69,11 @@ ul  {
 .portfolio-div {
     
     @media screen and (min-width: $brk-wide) {
-       width: 50%; 
+       @include width(50%); 
     }
     
     @media screen and (min-width: $brk-wider) {
-        width: 33%;
-        text-align: center;
+        @include width(33%);
     }
     
 }

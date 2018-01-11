@@ -2,10 +2,10 @@
 
 .main-nav {
   
-  width: 100%;
+  @include width(100%);
   min-height: 30px;
   padding: 10px;
-  text-align: center;
+  @extend %text-align-center;
   display: inline-block;
     
     @media screen and (min-width: $brk-wider) {
@@ -16,7 +16,7 @@
 .nav{
   
   display: inline-block;
-  font-weight: 700;
+  @include fontWeight(700);
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
@@ -24,7 +24,7 @@
   line-height: 2;
     
     @media screen and (min-width: $brk-narrow) {  
-        width: 45%;
+        @include width(45%);
         margin: auto;
         display: inline-block;
         flex-direction: row;
@@ -42,7 +42,7 @@
     }
     
     @media (min-width: $brk-wider) {
-        width: 45%;
+        @include width(45%);
         margin: 0;
         display: inline-flex;
         justify-content: flex-start;
@@ -57,38 +57,36 @@
     }
     
     @media screen and (min-width: $brk-wider){
-        width: 15%;
+        @include width(15%);
         margin: 1.5em;
     }
 }
 
 .nav li a {
 
-	width: 100%;
+	@include width(100%);
 	height: 100%;
 }
 
 
 .name {
-	font-size: 1.5em;
+    @include name;
     
     @media (min-width: $brk-wide) {
         display : block;
-        font-size : 25.5px;
     }
        
     @media screen and (min-width: $brk-wider){
-        text-align: left;
+        @include text-align-left;
         left: -50px;		
         display: inline-block;
-        width: 50%;
-        font-size: 1.5em;
+        @include width(50%);
     }
 }
 
 /* Links decoration */
 
 li a, a:visited, a:hover, a:active {
-	color: black;
+	@include color($black);
 	text-decoration: none;
 }

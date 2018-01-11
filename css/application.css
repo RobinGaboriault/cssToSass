@@ -1,3 +1,6 @@
+.main-nav, .presentation p, .portfolio-header, .portfolio-div p, h2, .contact, .contact p, .footer, .footer span {
+  text-align: center; }
+
 /* HTML */
 html {
   width: 100%;
@@ -27,14 +30,14 @@ h2 {
   font-weight: 700; }
 
 .portfolio-header, a, h2, .name {
-  color: black; }
+  color: #000; }
   @media screen and (min-width: 768px) {
     .portfolio-header, a, h2, .name {
-      color: black; } }
+      color: #000; } }
 
 *
 .portfolio-header, a, h2, .name {
-  color: black; }
+  color: #000; }
 
 /* Links styling */
 a:hover {
@@ -56,7 +59,6 @@ a:hover {
   width: 100%;
   min-height: 30px;
   padding: 10px;
-  text-align: center;
   display: inline-block; }
   @media screen and (min-width: 1024px) {
     .main-nav {
@@ -109,25 +111,23 @@ a:hover {
   font-size: 1.5em; }
   @media (min-width: 768px) {
     .name {
-      display: block;
-      font-size: 25.5px; } }
+      display: block; } }
   @media screen and (min-width: 1024px) {
     .name {
       text-align: left;
       left: -50px;
       display: inline-block;
-      width: 50%;
-      font-size: 1.5em; } }
+      width: 50%; } }
 
 /* Links decoration */
 li a, a:visited, a:hover, a:active {
-  color: black;
+  color: #000;
   text-decoration: none; }
 
 /* Presentation  */
 .presentation {
   margin-top: 0.5em;
-  text-align: center;
+  @exted %text-align-center;
   display: block; }
   @media (min-width: 768px) {
     .presentation {
@@ -161,11 +161,9 @@ li a, a:visited, a:hover, a:active {
 
 .presentation p {
   display: inline-block;
-  text-align: center;
   width: 80%; }
   @media screen and (min-width: 320px) {
     .presentation p {
-      text-align: center;
       width: 80%;
       color: #888888; } }
   @media (min-width: 768px) {
@@ -182,7 +180,6 @@ li a, a:visited, a:hover, a:active {
 
 .portfolio-header {
   width: 100%;
-  text-align: center;
   margin: 0 auto; }
   @media screen and (min-width: 1024px) {
     .portfolio-header {
@@ -214,7 +211,6 @@ li a, a:visited, a:hover, a:active {
 
 .portfolio-header {
   width: 100%;
-  text-align: center;
   margin: 0 auto; }
 
 ul {
@@ -226,7 +222,6 @@ ul {
   width: 80%; }
 
 .portfolio-div p, h2 {
-  text-align: center;
   vertical-align: middle;
   font-size: 14px; }
   @media screen and (min-width: 768px) {
@@ -235,7 +230,6 @@ ul {
 
 .portfolio-div p {
   width: 80%;
-  text-align: center;
   text-align: justify;
   margin: 0 auto;
   padding-bottom: 2em; }
@@ -254,8 +248,7 @@ ul {
     width: 50%; } }
 @media screen and (min-width: 1024px) {
   .portfolio-div {
-    width: 33%;
-    text-align: center; } }
+    width: 33%; } }
 
 @media screen and (min-width: 768px) {
   .portfolio-div img:hover {
@@ -264,7 +257,6 @@ ul {
 /* Contact   */
 .contact {
   padding-top: 4em;
-  text-align: center;
   padding-bottom: 2em;
   margin: 0 auto; }
 
@@ -272,7 +264,6 @@ ul {
   padding-bottom: 1em;
   margin: 0 auto;
   width: 80%;
-  text-align: center;
   text-align: justify; }
   @media screen and (min-width: 320px) {
     .contact p {
@@ -293,7 +284,6 @@ ul {
   transition: all .5s;
   border-top: 4px solid #ccc;
   padding-top: 2em;
-  text-align: center;
   margin: 0 auto;
   padding-bottom: 2em;
   width: 80%;
@@ -304,8 +294,7 @@ ul {
       margin-bottom: 2em; } }
 
 .footer span {
-  color: black;
-  text-align: center;
+  color: #000;
   vertical-align: middle;
   float: left;
   font-weight: bold; }

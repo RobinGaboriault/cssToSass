@@ -3,7 +3,7 @@
 .contact {
 
 	padding-top: 4em;
-	text-align: center;
+	@extend %text-align-center;
 	padding-bottom: 2em;
 	margin: 0 auto;
 }
@@ -12,7 +12,7 @@
 	padding-bottom: 1em;
 	margin: 0 auto;
 	width: 80%;
-	text-align: center;
+	@extend %text-align-center;
 	text-align: justify;
     
     @media screen and (min-width: $brk-narrow) {
@@ -20,12 +20,12 @@
     }
     @media screen and (min-width: $brk-wide) {
         width: 60%;
-        font-size: 17px;
+        @include fontSize(17px);
     }
     
     @media (min-width: $brk-wider) {
         padding-top: 2em;
         padding-bottom: 2em;
-        max-width: 45%;
+        @include max-width(45%);
     }
 }

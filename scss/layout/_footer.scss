@@ -5,10 +5,10 @@
     transition: all .5s;
 	border-top: 4px solid #ccc;
 	padding-top: 2em;
-	text-align: center;
+	@extend %text-align-center;
 	margin:0 auto;
 	padding-bottom: 2em;
-	width: 80%;
+	@include width(80%);
 	min-height: 30px;
     
     @media screen and (min-width: $brk-wider){
@@ -19,8 +19,8 @@
 
 .footer span {
 
-	color: black;
-	text-align: center;
+	@include color($black);
+	@extend %text-align-center;
 	vertical-align: middle;
 	float: left;
 	font-weight: bold;

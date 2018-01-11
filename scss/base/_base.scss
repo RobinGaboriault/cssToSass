@@ -4,18 +4,18 @@
 
 html {
 
-	width: 100%;
+	@include width(100%);
 	height: 100%;
-    font-size: 14px;
+    @include fontSize(14px);
     
     @media (min-width: $brk-narrow) {
-        font-size: 14px;
+        @include fontSize(14px);
     }
     @media (min-width: $brk-wide) {
-        font-size: 17px;
+        @include fontSize(17px);
     }
     @media (min-width: $brk-wider) {
-        max-width: 1350px;
+        @include max-width(1350px);
         margin: auto;
     }
 }
@@ -25,12 +25,12 @@ html {
 /* Global Layout Set-up */
 * { 
   box-sizing: border-box;
-  font-size: 14;
+  @include fontSize(14);
   color: #888888 ;
     
     p {
         @media (min-width: $brk-wide) {
-            font-size: 16px;
+            @include fontSize(16px);
         }
     }
    
@@ -42,15 +42,15 @@ html {
 
 h2 {
 
-	font-weight: 700;
+	@include fontWeight(700);
 }
 
 .portfolio-header, a, h2, .name  {
 
-	color: black;
+	@include color($black);
     
     @media screen and (min-width: $brk-wide){
-        color: black;
+        @include color($black);
     }
     
 }
@@ -60,13 +60,13 @@ h2 {
 
 .portfolio-header, a, h2, .name  {
 
-	color: black;
+	@include color($black);
 }
 
 /* Links styling */ 
 
 a:hover {
-	color: #2d4ff7;
+    @include color($hover-color);
 }
 
 @media screen and (min-width: $brk-wide){
