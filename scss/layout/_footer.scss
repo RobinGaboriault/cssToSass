@@ -16,6 +16,8 @@
         margin-bottom: 2em;
     }
 
+}
+
     .footer span {
         @include color($black);
         @extend %text-align-center;
@@ -23,7 +25,8 @@
         float: left;
         font-weight: bold;
     }
-    
+
+
     .footer a {
         vertical-align: middle;
         text-decoration: none;
@@ -34,6 +37,3 @@
     .footer-nav, .footer-portfolio, .footer-contact, .footer-home {
         display: none;
     }
-
-}
-

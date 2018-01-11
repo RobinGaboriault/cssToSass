@@ -43,7 +43,7 @@ html {
 h2 {
 
 	@include fontWeight(700);
-}
+
 
 .portfolio-header, a, h2, .name  {
 
@@ -54,7 +54,7 @@ h2 {
     }
     
 }
-
+}
 
 * /*  Font color     */
 

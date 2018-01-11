@@ -1,4 +1,4 @@
-.main-nav, .presentation p, .portfolio-header, .portfolio-div p, h2, .contact, .contact .contact p, .footer, .footer .footer span {
+.main-nav, .presentation p, .portfolio-header, .portfolio-div p, h2, .contact, .contact p, .footer, .footer span {
   text-align: center; }
 
 /* HTML */
@@ -28,12 +28,11 @@ html {
 
 h2 {
   font-weight: 700; }
-
-.portfolio-header, a, h2, .name {
-  color: #000; }
-  @media screen and (min-width: 768px) {
-    .portfolio-header, a, h2, .name {
-      color: #000; } }
+  h2 .portfolio-header, h2 a, h2 h2, h2 .name {
+    color: #000; }
+    @media screen and (min-width: 768px) {
+      h2 .portfolio-header, h2 a, h2 h2, h2 .name {
+        color: #000; } }
 
 *
 .portfolio-header, a, h2, .name {
@@ -63,61 +62,57 @@ a:hover {
   @media screen and (min-width: 1024px) {
     .main-nav {
       margin-top: 2em; } }
-
-.nav {
-  display: inline-block;
-  font-weight: 700;
-  list-style-type: none;
-  margin: 0 auto;
-  padding: 0;
-  text-decoration: none;
-  line-height: 2; }
-  @media screen and (min-width: 320px) {
-    .nav {
-      width: 45%;
-      margin: auto;
-      display: inline-block;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: space-around; } }
-  @media screen and (min-width: 768px) {
-    .nav {
-      margin: 0 auto;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: space-around;
-      align-content: space-around;
-      margin-bottom: 34px; } }
-  @media (min-width: 1024px) {
-    .nav {
-      width: 45%;
-      margin: 0;
-      display: inline-flex;
-      justify-content: flex-start; } }
-
-.nav li {
-  text-decoration: none; }
-  @media screen and (min-width: 1024px) {
-    .nav li {
-      width: 15%;
-      margin: 1.5em; } }
-
-.nav li a {
-  width: 100%;
-  height: 100%; }
-
-.name {
-  font-size: 1.5em; }
-  @media (min-width: 768px) {
-    .name {
-      display: block; } }
-  @media screen and (min-width: 1024px) {
-    .name {
-      text-align: left;
-      left: -50px;
-      display: inline-block;
-      width: 50%; } }
+  .main-nav .name {
+    font-size: 1.5em; }
+    @media (min-width: 768px) {
+      .main-nav .name {
+        display: block; } }
+    @media screen and (min-width: 1024px) {
+      .main-nav .name {
+        text-align: left;
+        left: -50px;
+        display: inline-block;
+        width: 50%; } }
+  .main-nav .nav {
+    display: inline-block;
+    font-weight: 700;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    text-decoration: none;
+    line-height: 2; }
+    @media screen and (min-width: 320px) {
+      .main-nav .nav {
+        width: 45%;
+        margin: auto;
+        display: inline-block;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around; } }
+    @media screen and (min-width: 768px) {
+      .main-nav .nav {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-content: space-around;
+        margin-bottom: 34px; } }
+    @media (min-width: 1024px) {
+      .main-nav .nav {
+        width: 45%;
+        margin: 0;
+        display: inline-flex;
+        justify-content: flex-start; } }
+  .main-nav .nav li {
+    text-decoration: none; }
+    @media screen and (min-width: 1024px) {
+      .main-nav .nav li {
+        width: 15%;
+        margin: 1.5em; } }
+  .main-nav .nav li a {
+    width: 100%;
+    height: 100%; }
 
 /* Links decoration */
 li a, a:visited, a:hover, a:active {
@@ -129,6 +124,9 @@ li a, a:visited, a:hover, a:active {
   margin-top: 0.5em;
   @exted %text-align-center;
   display: block; }
+  @media (min-width: 320px) {
+    .presentation {
+      text-align: center; } }
   @media (min-width: 768px) {
     .presentation {
       margin: auto;
@@ -175,25 +173,6 @@ li a, a:visited, a:hover, a:active {
       max-width: 500px;
       font-size: 20px;
       padding-top: 20px; } }
-
-.profile-picture {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  width: 80%; }
-  @media screen and (min-width: 320px) {
-    .profile-picture {
-      width: 80%;
-      margin: auto; } }
-  @media (min-width: 768px) {
-    .profile-picture {
-      width: 46%;
-      margin: auto; } }
-  @media (min-width: 1024px) {
-    .profile-picture {
-      max-width: 400px;
-      max-height: 250px; } }
 
 .portfolio-header {
   width: 100%;
@@ -276,23 +255,24 @@ ul {
   padding-top: 4em;
   padding-bottom: 2em;
   margin: 0 auto; }
-  .contact .contact p {
-    padding-bottom: 1em;
-    margin: 0 auto;
-    width: 80%;
-    text-align: justify; }
-    @media screen and (min-width: 320px) {
-      .contact .contact p {
-        width: 80%; } }
-    @media screen and (min-width: 768px) {
-      .contact .contact p {
-        width: 60%;
-        font-size: 17px; } }
-    @media (min-width: 1024px) {
-      .contact .contact p {
-        padding-top: 2em;
-        padding-bottom: 2em;
-        max-width: 45%; } }
+
+.contact p {
+  padding-bottom: 1em;
+  margin: 0 auto;
+  width: 80%;
+  text-align: justify; }
+  @media screen and (min-width: 320px) {
+    .contact p {
+      width: 80%; } }
+  @media screen and (min-width: 768px) {
+    .contact p {
+      width: 60%;
+      font-size: 17px; } }
+  @media (min-width: 1024px) {
+    .contact p {
+      padding-top: 2em;
+      padding-bottom: 2em;
+      max-width: 45%; } }
 
 /*   FOOTER   */
 .footer {
@@ -308,17 +288,20 @@ ul {
     .footer {
       margin-top: 2em;
       margin-bottom: 2em; } }
-  .footer .footer span {
-    color: #000;
-    vertical-align: middle;
-    float: left;
-    font-weight: bold; }
-  .footer .footer a {
-    vertical-align: middle;
-    text-decoration: none;
-    font-weight: bold;
-    float: right; }
-  .footer .footer-nav, .footer .footer-portfolio, .footer .footer-contact, .footer .footer-home {
-    display: none; }
+
+.footer span {
+  color: #000;
+  vertical-align: middle;
+  float: left;
+  font-weight: bold; }
+
+.footer a {
+  vertical-align: middle;
+  text-decoration: none;
+  font-weight: bold;
+  float: right; }
+
+.footer-nav, .footer-portfolio, .footer-contact, .footer-home {
+  display: none; }
 
 /*# sourceMappingURL=application.css.map */

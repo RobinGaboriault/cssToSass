@@ -7,6 +7,9 @@
  	@exted %text-align-center;
  	display: block;
      
+     @media (min-width: $brk-narrow) {
+         text-align: center;
+     }
      @media (min-width: $brk-wide) {
          margin: auto;
          padding-bottom: 68px;
@@ -68,28 +71,5 @@
    
      } 
 
-    .profile-picture {
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-        @include width(80%);
-
-        @media screen and (min-width: $brk-narrow){
-        @include width(80%);
-        margin: auto;
-        }
-
-        @media (min-width: $brk-wide) {
-            @include width(46%);
-            margin: auto;
-        }
-
-        @media (min-width: $brk-wider) {
-            @include max-width(400px);
-            max-height: 250px;
-        }
-    }
-
+ 
 
