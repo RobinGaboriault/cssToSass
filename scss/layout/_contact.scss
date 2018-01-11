@@ -6,12 +6,11 @@
 	@extend %text-align-center;
 	padding-bottom: 2em;
 	margin: 0 auto;
-}
 
-.contact p {
+    .contact p {
 	padding-bottom: 1em;
 	margin: 0 auto;
-	width: 80%;
+	@include width(80%);
 	@extend %text-align-center;
 	text-align: justify;
     
@@ -19,7 +18,7 @@
         width: 80%;
     }
     @media screen and (min-width: $brk-wide) {
-        width: 60%;
+        @include width(60%);
         @include fontSize(17px);
     }
     
@@ -29,3 +28,7 @@
         @include max-width(45%);
     }
 }
+
+
+}
+

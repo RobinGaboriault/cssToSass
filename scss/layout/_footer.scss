@@ -15,26 +15,25 @@
         margin-top: 2em;
         margin-bottom: 2em;
     }
+
+    .footer span {
+        @include color($black);
+        @extend %text-align-center;
+        vertical-align: middle;
+        float: left;
+        font-weight: bold;
+    }
+    
+    .footer a {
+        vertical-align: middle;
+        text-decoration: none;
+        font-weight: bold;
+        float: right;
+    }
+
+    .footer-nav, .footer-portfolio, .footer-contact, .footer-home {
+        display: none;
+    }
+
 }
 
-.footer span {
-
-	@include color($black);
-	@extend %text-align-center;
-	vertical-align: middle;
-	float: left;
-	font-weight: bold;
-}
-
-.footer a {
-
-	vertical-align: middle;
-	text-decoration: none;
-	font-weight: bold;
-	float: right;
-}
-
-.footer-nav, .footer-portfolio, .footer-contact, .footer-home {
-
-	display: none;
-}

@@ -13,6 +13,7 @@
     }
 }
 
+
 .nav{
   
   display: inline-block;
@@ -47,29 +48,34 @@
         display: inline-flex;
         justify-content: flex-start;
     }
+    
 }
 
-.nav li  {
+
+    .nav li  {
 	
-	text-decoration: none;
-    
-    @media (min-width: $brk-wide) {
+        text-decoration: none;
+
+        @media (min-width: $brk-wide) {
+        }
+
+        @media screen and (min-width: $brk-wider){
+            @include width(15%);
+            margin: 1.5em;
+        }
     }
-    
-    @media screen and (min-width: $brk-wider){
-        @include width(15%);
-        margin: 1.5em;
+
+
+        .nav li a {
+
+        @include width(100%);
+        height: 100%;
     }
-}
-
-.nav li a {
-
-	@include width(100%);
-	height: 100%;
-}
 
 
-.name {
+
+
+    .name {
     @include name;
     
     @media (min-width: $brk-wide) {

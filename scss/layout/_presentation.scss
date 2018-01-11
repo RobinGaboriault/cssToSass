@@ -15,71 +15,81 @@
          flex-direction: row-reverse;
          justify-content: flex-start;
          @include width(94%);
-         
      }
-     
-   //  @media screen and (min-width: $brk-narrow){
- 	// width: 94%;
- 	// margin: auto;
- 	// display: flex;
-	// flex-direction: row-reverse;
-	// flex-wrap: nowrap;
-	// justify-content: flex-start;
-	// padding-bottom: 4em;
-    // }
-     }
-    
+        
+     .profile-picture {
 
-/* Profile Picture */  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        @include width(80%);
 
-.profile-picture {
-
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 0 auto;
-	@include width(80%);
-    
-    @media screen and (min-width: $brk-narrow){
-	@include width(80%);
-	margin: auto;
-    }
-    
-    @media (min-width: $brk-wide) {
-        @include width(46%);
+        @media screen and (min-width: $brk-narrow){
+        @include width(80%);
         margin: auto;
-    }
-    
-    @media (min-width: $brk-wider) {
-        @include max-width(400px);
-        max-height: 250px;
-}
-}
+        }
 
-.presentation p {
+        @media (min-width: $brk-wide) {
+            @include width(46%);
+            margin: auto;
+        }
 
-    @extend %text-align-center;
-	display: inline-block;
-	@include width(80%);
-    
-    @media screen and (min-width: $brk-narrow){
-	@include width(80%);
-	@include color($grey);
-     }
-    
-    @media (min-width: $brk-wide) {
-        @include width(50%);
-        @include text-align-left;
-        padding-top: 16px;
-        line-height: 1.6;
+        @media (min-width: $brk-wider) {
+            @include max-width(400px);
+            max-height: 250px;
+        }
     }
-    
-    @media (min-width: $brk-wider) {
-        @include max-width(500px);
-        @include fontSize(20px);
-        padding-top: 20px;
-    }
+     
+}
+        .presentation p {
+
+        @extend %text-align-center;
+        display: inline-block;
+        @include width(80%);
+
+        @media screen and (min-width: $brk-narrow){
+        @include width(80%);
+        @include color($grey);
+         }
+
+        @media (min-width: $brk-wide) {
+            @include width(50%);
+            @include text-align-left;
+            padding-top: 16px;
+            line-height: 1.6;
+        }
+
+        @media (min-width: $brk-wider) {
+            @include max-width(500px);
+            @include fontSize(20px);
+            padding-top: 20px;
+        }
    
-}
+     } 
+
+    .profile-picture {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        @include width(80%);
+
+        @media screen and (min-width: $brk-narrow){
+        @include width(80%);
+        margin: auto;
+        }
+
+        @media (min-width: $brk-wide) {
+            @include width(46%);
+            margin: auto;
+        }
+
+        @media (min-width: $brk-wider) {
+            @include max-width(400px);
+            max-height: 250px;
+        }
+    }
 
 
