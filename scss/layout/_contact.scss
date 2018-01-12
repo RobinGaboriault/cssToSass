@@ -4,9 +4,13 @@
 
 	padding-top: 4em;
 	@extend %text-align-center;
-	padding-bottom: 2em;
+	padding-bottom: 4em;
 	margin: 0 auto;
 
+    h2 {
+        margin-bottom: 2em;
+    }
+    
 }
 
     .contact p {
@@ -30,3 +34,9 @@
         @include max-width(45%);
     }
 }
+    
+    .contact span {
+        @media (min-width: $brk-wide) {
+            line-height: 5;
+        }
+    }

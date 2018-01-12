@@ -26,7 +26,7 @@ html {
 * { 
   box-sizing: border-box;
   @include fontSize(14);
-  color: #888888 ;
+  @include color($grey);
     
     p {
         @media (min-width: $brk-wide) {

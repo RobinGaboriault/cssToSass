@@ -19,6 +19,11 @@
          justify-content: flex-start;
          @include width(94%);
      }
+     
+     @media (min-width: $brk-wider) {
+         @include width(94%);
+         justify-content: space-between;
+     }
         
      .profile-picture {
 
@@ -39,9 +44,15 @@
         }
 
         @media (min-width: $brk-wider) {
+            @include width(40%);
             @include max-width(400px);
             max-height: 250px;
+            margin-left: 5%;
         }
+         
+         @media (min-width: $brk-laptop) {
+             margin-left: 28%;
+         }
     }
      
 }
@@ -64,6 +75,7 @@
         }
 
         @media (min-width: $brk-wider) {
+            @include width(53%);
             @include max-width(500px);
             @include fontSize(20px);
             padding-top: 20px;

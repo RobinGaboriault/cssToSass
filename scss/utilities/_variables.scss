@@ -3,6 +3,7 @@
 $brk-narrow :  320px;
 $brk-wide :  768px;
 $brk-wider : 1024px;
+$brk-laptop : 1440px;
 
 $font-size : 14px;
 
@@ -16,18 +17,117 @@ $grey : #888888;
 
 
 
+// Footer w/ 768px width
+
+//	<footer class="footer2">
+		
+//	  	<div class="footer-nav" id="nav">
+//            <h1 class="footer-name">Robin Gaboriault</h1>
+//            <ul class="footer-nav">
+//              <li><a href="#nav">Home</a></li>
+//              <li><a href="#portfolio">Portfolio</a></li>
+//              <li><a href="#footer">Contact</a></li>
+//            </ul>
+//  	     </div>
 
 
 
 
+// Footer w/ 320px width
+
+/*   FOOTER   */
+
+/*.footer {
+	border-radius: 6px;
+    transition: all .5s;
+	border-top: 4px solid #ccc;
+	padding-top: 2em;
+	text-align: center;
+	margin:0 auto;
+	padding-bottom: 2em;
+	width: 80%;
+	min-height: 30px;
+}
+
+.footer span {
+
+	color: black;
+	text-align: center;
+	vertical-align: middle;
+	float: left;
+	font-weight: bold;
+}
+
+.footer a {
+
+	vertical-align: middle;
+	text-decoration: none;
+	font-weight: bold;
+	float: right;
+}
+
+.footer-nav, .footer-portfolio, .footer-contact, .footer-home {
+
+	display: none;
+}
 
 
 
 
+//       Footer   1024px width      
+
+.footer {
+
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
 
 
 
 
+// Footer that need work
+
+//   FOOTER   
+
+.footer {
+	border-radius: 6px;
+    transition: all .5s;
+	border-top: 4px solid #ccc;
+	padding-top: 2em;
+	text-align: center;
+	margin:0 auto;
+	padding-bottom: 2em;
+	width: 80%;
+	min-height: 30px;
+    
+    @media #{$brk-wide}{
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+}
+
+.footer span {
+
+	color: black;
+	text-align: center;
+	vertical-align: middle;
+	float: left;
+	font-weight: bold;
+}
+
+.footer a {
+
+	vertical-align: middle;
+	text-decoration: none;
+	font-weight: bold;
+	float: right;
+}
+
+.footer-nav, .footer-portfolio, .footer-contact, .footer-home {
+
+	display: none;
+}
 
 
+*/
 

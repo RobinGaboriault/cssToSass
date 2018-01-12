@@ -23,7 +23,6 @@
 
 @mixin color($color) {
     color: $color;
-
 }
 
 @mixin width($width) {
@@ -38,7 +37,13 @@
     text-align: left;
 }
 
+@mixin footer-border {	
+    border-radius: 6px;
+	border-top: 4px solid #ccc;
+}
 
+
+// Placeholder
 %text-align-center {
     text-align: center;
 }
